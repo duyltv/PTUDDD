@@ -1,0 +1,6 @@
+﻿GEOCODE:
+https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=YOUR_API_KEY
+Example:
+https://maps.googleapis.com/maps/api/geocode/json?latlng=10.7546664,106.4150239&key=AIzaSyCtFJsUbwqbdJrYf8WtKShFZ8Jjs0hweIs
+Result:
+"ĐT816, Thạnh Lợi, Bến Lức, Long An, Vietnam"
