@@ -30,16 +30,16 @@ public class MainActivity extends AppCompatActivity {
         countries.add("USD");
         countries.add("EUR");
 
-        /*ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.activity_main, countries);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, countries);
         listView1.setAdapter(adapter);
         listView2.setAdapter(adapter);
 
         listView1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //String text = listView1.getItemAtPosition(position).toString();
-
+                String text = listView1.getItemAtPosition(position).toString();
+                
             }
-        });*/
+        });
     }
 }
