@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -38,7 +39,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String text = listView1.getItemAtPosition(position).toString();
-                
+
+                TextView textView2 = (TextView) findViewById(R.id.textView2);
+                textView2.setText(text);
+            }
+        });
+
+        listView2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String text = listView2.getItemAtPosition(position).toString();
+
+                TextView textView3 = (TextView) findViewById(R.id.textView3);
+                textView3.setText(text);
             }
         });
     }
